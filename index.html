@@ -1,7 +1,132 @@
+<!-- Using FontAwesome Icons (CC BY 4.0 License) -->
 <!DOCTYPE html>
 <html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f1d1d749c4.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>   
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages. Kristian Kraljevic</p>
+
+    <header class="header">
+        <div class="header_content">
+            <div class="header_name">
+                <li><a href="#home">KRISTIAN KRALJEVIC</a></li>
+            </div>
+            <ul class="header_links">
+                <li class="link"><a href="#home">home</a></li>
+                <li class="link"><a href="#link-about">about</a></li>
+                <li class="link"><a href="#link-projects">projects</a></li>
+                <li class="link"><a href="#contact">contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+
+    <div class="section" id="home">
+        <div>
+            <p>Hallo, mein Name ist</p>
+            <h1 class="name">Kristian Kraljevic</h1>
+            <h2>Full Stack Developer</h2>
+        </div>
+
+
+    </div>
+    <div class="section" id="link-about">
+        <div class="headline">
+            <h1 class="gradient padding"><span>About Me</span></h1>
+        </div>
+
+        <div id="about">
+            <div class="about_detail">
+                <div class="description">
+                    Hallo, ich bin Kristian Kraljevic und ein Full-Stack-Developer.
+                </div>
+                <div class="description">Im Zuge meiner
+                    Ausbildung, Praktika und eigenständigen Projekte in meiner Freizeit hatte ich die Möglichkeit in
+                    viele
+                    Bereiche der
+                    Programmierung Erfahrungen zu sammeln.</div>
+                <div class="skills">
+                    <i class="fa-brands fa-html5" title="HTML"></i>
+                    <i class="fa-brands fa-js" title="JavaScript"></i>
+                    <i class="fa-brands fa-css3-alt" title="CSS"></i>
+                    <i class="fa-brands fa-java" title="Java"></i>
+                    <i class="fa-brands fa-angular" title="AngularJS"></i>
+                    <i class="fa-brands fa-vuejs" title="Vue"></i>
+                    <i class="fa-solid fa-database" title="SQL"></i>
+                </div>
+                <button class="button">Lebenslauf</button>
+            </div>
+            <div class="picture">
+                <img class="image" width="80%" src="./images/kristian.png">
+            </div>
+        </div>
+
+    </div>
+    <div class="section" id="link-projects">
+        <div class="headline">
+            <h1 class="gradient padding"><span>Projects</span></h1>
+        </div>
+        <div id="projects">
+            <div class="project-card">
+                <img class="image" src="./images/Empire-Flippers-an-online-business-marketplace.webp">
+                <p class="project-title">FreePoint</p>
+                <p class="project-description">Eine kostenfreie Rabattpunkte-App</p>
+            </div>
+            <div class="project-card">
+                <img class="image" src="./images/Empire-Flippers-an-online-business-marketplace.webp">
+                <p class="project-title">FreePoint</p>
+                <p class="project-description">Eine kostenfreie Rabattpunkte-App</p>
+            </div>
+            <div class="project-card">
+                <img class="image" src="./images/Empire-Flippers-an-online-business-marketplace.webp">
+                <p class="project-title">FreePoint</p>
+                <p class="project-description">Eine kostenfreie Rabattpunkte-App</p>
+            </div>
+            <div class="project-card">
+                <img class="image" src="./images/Empire-Flippers-an-online-business-marketplace.webp">
+                <p class="project-title">FreePoint</p>
+                <p class="project-description">Eine kostenfreie Rabattpunkte-App</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="contact">
+        <div class="headline">
+            <h1 class="gradient padding"><span>Contact</span></h1>
+        </div>
+        <div class="container">
+            <form action="action_page.php">
+
+                <input type="text" class="form-input" id="fname" name="firstname" placeholder="Vorname">
+
+                <input type="text" class="form-input" id="lname" name="lastname" placeholder="Nachname">
+
+
+                <textarea class="form-input" id="subject" name="subject" placeholder="Nachricht..."
+                    style="height:200px"></textarea>
+
+                <input type="submit" class="button" value="Submit">
+
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>© Copyright 2023. Made by Kristian Kraljevic</p>
+        <div class="socials">
+            <a href="https://github.com/Kristian13245">Github</a>
+            <a href="https://www.linkedin.com/in/kristian-kraljevic-16a9b7253/">LinkedIn</a>
+            <a href="mailto:kristian.kraljevic@hotmail.com">Mail</a>
+        </div>
+    </footer>
+
 </body>
+
 </html>
