@@ -7,7 +7,6 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/f1d1d749c4.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
 </head>
 
 <body>
@@ -15,14 +14,19 @@
     <header class="header">
         <div class="header_content">
             <div class="header_name">
-                <li><a href="#home">KRISTIAN KRALJEVIC</a></li>
+                <a href="#home">KRISTIAN KRALJEVIC</a>
             </div>
             <ul class="header_links">
-                <li class="link"><a href="#home">home</a></li>
-                <li class="link"><a href="#link-about">about</a></li>
-                <li class="link"><a href="#link-projects">projects</a></li>
-                <li class="link"><a href="#contact">contact</a></li>
+                <li class="link"><a href="#home" class="nav-link">home</a></li>
+                <li class="link"><a href="#link-about" class="nav-link">about</a></li>
+                <li class="link"><a href="#link-projects" class="nav-link">projects</a></li>
+                <li class="link"><a href="#contact" class="nav-link">contact</a></li>
             </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
     </header>
 
@@ -52,6 +56,8 @@
                     viele
                     Bereiche der
                     Programmierung Erfahrungen zu sammeln.</div>
+                <div class="description">Außerdem habe ich des öfteren innerhalb Teams Projekte erstellt, wobei ich als
+                    Product Owner und Scrum Master agieren konnte.</div>
                 <div class="skills">
                     <i class="fa-brands fa-html5" title="HTML"></i>
                     <i class="fa-brands fa-js" title="JavaScript"></i>
@@ -64,7 +70,7 @@
                 <button class="button">Lebenslauf</button>
             </div>
             <div class="picture">
-                <img class="image" width="80%" src="./images/kristian.png">
+                <img class="image" src="./images/kristian.png">
             </div>
         </div>
 
@@ -104,13 +110,13 @@
         <div class="container">
             <form action="https://formsubmit.co/2f843767046d688198c0e7ef233c65bc" method="POST">
 
-                <input type="text" class="form-input" id="name" name="firstname" placeholder="Name">
+                <input type="text" class="form-input" id="name" name="firstname" placeholder="Name" required>
 
-                <input type="text" class="form-input" id="email" name="email" placeholder="E-Mail">
+                <input type="text" class="form-input" id="email" name="email" placeholder="E-Mail" required>
 
 
-                <textarea class="form-input" id="subject" name="message" placeholder="Nachricht..."
-                    style="height:200px"></textarea>
+                <textarea class="form-input" id="subject" name="message" placeholder="Nachricht..." style="height:200px"
+                    required></textarea>
 
                 <input type="hidden" name="_next" value="https://kristian13245.github.io/thanks.html">
 
@@ -129,6 +135,7 @@
         </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 
 </html>
