@@ -1,9 +1,10 @@
 <!-- Using FontAwesome Icons (CC BY 4.0 License) -->
 <!DOCTYPE html>
-<html>
+<html lang="de">
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dies ist ein Portfolio von Kristian Kraljevic, einem Full Stack Developer.">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/f1d1d749c4.js" crossorigin="anonymous"></script>
@@ -34,9 +35,9 @@
 
     <div class="section" id="home">
         <div class="home-text">
-            <p>Hallo, mein Name ist</p>
+            <p class="reveal active">Hallo, mein Name ist</p>
             <h1 class="name">Kristian <br class="responsive" /> Kraljevic</h1>
-            <h2>Full <br class="responsive" /> Stack <br class="responsive" /> Developer</h2>
+            <h2 class="reveal-on-load">Full <br class="responsive" /> Stack <br class="responsive" /> Developer</h2>
         </div>
 
 
@@ -48,7 +49,7 @@
         </div>
 
         <div id="about">
-            <div class="about_detail">
+            <div class="about_detail reveal">
                 <div class="description">
                     Hallo, ich bin Kristian Kraljevic und ein Full-Stack-Developer.
                 </div>
@@ -70,8 +71,8 @@
                 </div>
                 <button class="button">Lebenslauf</button>
             </div>
-            <div class="picture">
-                <img class="image" src="./images/kristian.png">
+            <div class="picture reveal">
+                <img class="image" src="./images/kristian.png" alt="Portraitfoto Kristian Kraljevic">
             </div>
         </div>
 
@@ -81,23 +82,23 @@
             <h1 class="gradient padding"><span>Projects</span></h1>
         </div>
         <div id="projects">
-            <div class="project-card">
-                <img class="image" src="./images/Empire-Flippers-an-online-business-marketplace.webp">
+            <div class="project-card reveal">
+                <img class="image" src="./images/Empire-Flippers-an-online-business-marketplace.webp" alt="FreePoint">
                 <p class="project-title">FreePoint</p>
                 <p class="project-description">Eine kostenfreie Rabattpunkte-App</p>
             </div>
-            <div class="project-card">
-                <img class="image" src="./images/Empire-Flippers-an-online-business-marketplace.webp">
+            <div class="project-card reveal">
+                <img class="image" src="./images/Empire-Flippers-an-online-business-marketplace.webp" alt="FreePoint">
                 <p class="project-title">FreePoint</p>
                 <p class="project-description">Eine kostenfreie Rabattpunkte-App</p>
             </div>
-            <div class="project-card">
-                <img class="image" src="./images/Empire-Flippers-an-online-business-marketplace.webp">
+            <div class="project-card reveal">
+                <img class="image" src="./images/Empire-Flippers-an-online-business-marketplace.webp" alt="FreePoint">
                 <p class="project-title">FreePoint</p>
                 <p class="project-description">Eine kostenfreie Rabattpunkte-App</p>
             </div>
-            <div class="project-card">
-                <img class="image" src="./images/Empire-Flippers-an-online-business-marketplace.webp">
+            <div class="project-card reveal">
+                <img class="image" src="./images/Empire-Flippers-an-online-business-marketplace.webp" alt="FreePoint">
                 <p class="project-title">FreePoint</p>
                 <p class="project-description">Eine kostenfreie Rabattpunkte-App</p>
             </div>
@@ -108,7 +109,7 @@
         <div class="headline">
             <h1 class="gradient padding"><span>Contact</span></h1>
         </div>
-        <div class="form">
+        <div class="form reveal">
             <form action="https://formsubmit.co/2f843767046d688198c0e7ef233c65bc" method="POST">
 
                 <input type="text" class="form-input" id="name" name="firstname" placeholder="Name" required>

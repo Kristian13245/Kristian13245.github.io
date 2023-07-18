@@ -41,6 +41,7 @@ a:hover {
 
 
 .header {
+    z-index: 300;
     position: fixed;
     width: 100%;
     background-color: var(--bg-color);
@@ -314,6 +315,7 @@ h1.padding span {
 }
 
 .project-card {
+    border-radius: 5px;
     width: 40%;
     margin: 2rem;
     display: flex;
@@ -442,6 +444,52 @@ h1.padding span {
         padding: 20px;
     }
 }
+
+.reveal{
+    position: relative;
+    transform: translateX(-150px);
+    opacity: 0;
+    transition: .5s all ease;
+  }
+
+  .reveal.active{
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  
+
+  @keyframes revealOnLoad {
+    0% {
+        transform: translateX(-150px);
+        opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .reveal-on-load{
+    animation: 2s ease-out 0s 1 revealOnLoad;
+  }
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--cta-color); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 165, 0, 0.5); 
+  }
 
 /*
 .sun {
