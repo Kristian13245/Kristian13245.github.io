@@ -33,14 +33,16 @@ function show() {
 window.addEventListener("scroll", show);
 
 
-var splide = new Splide( '.splide', {
-  type   : 'loop',
-  padding: '20%',
-  perPage: 1,
-  perMove: 1,
-} );
 
-splide.mount();
+document.addEventListener('DOMContentLoaded', function () {
+  var main = new Splide('#main-carousel', {
+    type: 'loop',
+    rewind: true
+  });
+
+
+  main.mount();
+});
 
 
 
