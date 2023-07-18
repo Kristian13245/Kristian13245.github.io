@@ -21,11 +21,26 @@ function show() {
     var elementTop = reveal[i].getBoundingClientRect().top;
     var e = 160;
 
-    if (elementTop < windowHeight-e) {
-      reveal[i].classList.add("active");}
-    else {;
+    if (elementTop < windowHeight - e) {
+      reveal[i].classList.add("active");
+    }
+    else {
+      ;
     }
   }
 }
 
 window.addEventListener("scroll", show);
+
+
+var splide = new Splide( '.splide', {
+  type   : 'loop',
+  padding: '20%',
+  perPage: 1,
+  perMove: 1,
+} );
+
+splide.mount();
+
+
+
